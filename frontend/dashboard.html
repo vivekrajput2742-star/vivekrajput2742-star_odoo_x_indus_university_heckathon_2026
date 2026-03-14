@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-box">
+    <h2>Inventory Dashboard</h2>
+    <button onclick="logout()">Logout</button>
+
+    <div class="kpi">
+        <p>Total Products in Stock: <span id="totalProducts">0</span></p>
+        <p>Low Stock Items: <span id="lowStock">0</span></p>
+        <p>Pending Receipts: <span id="receipts">0</span></p>
+        <p>Pending Deliveries: <span id="deliveries">0</span></p>
+    </div>
+
+    <div class="nav">
+        <button onclick="location.href='products.html'">Products</button>
+        <button onclick="location.href='operations.html'">Operations</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

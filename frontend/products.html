@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-box">
+    <h2>Products</h2>
+    <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="text" id="sku" placeholder="SKU">
+        <input type="text" id="category" placeholder="Category">
+        <input type="text" id="unit" placeholder="Unit">
+        <input type="number" id="reorder" placeholder="Reorder Level">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+
+    <div id="productsList"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

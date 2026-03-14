@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard-box">
+    <h2>Operations</h2>
+    <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
+
+    <div class="form">
+        <h3>Receive Stock</h3>
+        <input type="text" id="receiveSKU" placeholder="SKU">
+        <input type="text" id="receiveWarehouse" placeholder="Warehouse">
+        <input type="number" id="receiveQty" placeholder="Quantity">
+        <button onclick="receiveStock()">Receive</button>
+
+        <h3>Deliver Stock</h3>
+        <input type="text" id="deliverSKU" placeholder="SKU">
+        <input type="text" id="deliverWarehouse" placeholder="Warehouse">
+        <input type="number" id="deliverQty" placeholder="Quantity">
+        <button onclick="deliverStock()">Deliver</button>
+
+        <h3>Transfer Stock</h3>
+        <input type="text" id="transferSKU" placeholder="SKU">
+        <input type="text" id="fromWarehouse" placeholder="From Warehouse">
+        <input type="text" id="toWarehouse" placeholder="To Warehouse">
+        <input type="number" id="transferQty" placeholder="Quantity">
+        <button onclick="transferStock()">Transfer</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

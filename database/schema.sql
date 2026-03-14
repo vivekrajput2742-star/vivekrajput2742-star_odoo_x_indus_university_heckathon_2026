@@ -1,0 +1,41 @@
+CREATE DATABASE coreinventory;
+
+USE coreinventory;
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+email VARCHAR(100) UNIQUE,
+password VARCHAR(100)
+);
+
+CREATE TABLE warehouses(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+location VARCHAR(100)
+);
+
+CREATE TABLE products(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(100),
+sku VARCHAR(50),
+category VARCHAR(100),
+unit VARCHAR(20),
+reorder_level INT
+);
+
+CREATE TABLE stock(
+id INT AUTO_INCREMENT PRIMARY KEY,
+sku VARCHAR(50),
+warehouse VARCHAR(100),
+quantity INT
+);
+
+CREATE TABLE move_history(
+id INT AUTO_INCREMENT PRIMARY KEY,
+sku VARCHAR(50),
+operation VARCHAR(50),
+quantity INT,
+warehouse VARCHAR(100),
+status VARCHAR(50),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
